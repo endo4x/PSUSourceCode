@@ -1,0 +1,134 @@
+.nav {
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(0, 0, 0, 0);
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+}
+
+.navLink {
+  transition: all 0.3s ease-in-out;
+  /* font-family: 'Ubuntu Mono', monospace; */
+  color: #fff;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  transition: all 0.3s ease-in-out;
+  color: #00d366;
+}
+
+.navLinkActive {
+  color: #00d366;
+}
+
+.bars {
+  display: none;
+  color: #fff;
+  position: absolute;
+  margin: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  margin-right: -12px;
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 925px) {
+  .bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 120%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  button.hamburgerButton {
+    display: block;
+  }
+  .navMenu {
+    display: none;
+  }
+  .navBtn {
+    display: none;
+  }
+}
+
+.navBtnLink {
+  border-radius: 32px;
+  background: #46e393;
+  padding: 10px 22px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.navBtnLink:hover {
+  transition: all 0.2s ease-in-out;
+  margin-top: -10px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  /* color: #000; */
+}
+
+.hamburgerButton {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.hamburgerTray {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--psu-bg);
+  height: 0;
+  width: 100vw;
+  transition: .1s ;
+  transition-timing-function: ease-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburgerTray a {
+  height: 18%;
+  width: 100%;
+  background: var(--psu-bg-alt);
+  margin-bottom: 3px;
+}
+
+.clickAwayListener {
+  position: fixed;
+  top: 0;
+  background: transparent;
+  height: 0;
+  width: 100vw;
+}
+
+.open {
+  height: 50vh;
+}

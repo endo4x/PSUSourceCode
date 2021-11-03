@@ -1,0 +1,24 @@
+.dashboardPage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dashboardContent {
+  box-sizing: content-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.dashboardContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+

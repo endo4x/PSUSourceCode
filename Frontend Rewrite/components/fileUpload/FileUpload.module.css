@@ -1,0 +1,52 @@
+.container {
+  width: 270px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 60px 10px 0;
+}
+
+.input {
+  /* here go my braincells :gape: */
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  position: absolute;
+}
+
+.inputContainer {
+  width: 50%;
+  height: 100%;
+}
+.actualButton {
+  margin-top: 7.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--psu-green);
+  color: black;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.actualButton > span {
+  color: black;
+  font-size: .8rem;
+  margin: 0 auto;
+}
+
+.actualButton:hover {
+  background-color: var(--psu-green-alt);
+}
+
+.actualButton:hover > span {
+  color: white;
+}

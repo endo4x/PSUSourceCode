@@ -1,0 +1,65 @@
+.button {
+  background: #46e393;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  min-width: 150px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.15rem;
+  /* margin-top: 30px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button > svg {
+  margin-right: 6px;
+}
+
+.button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.raisedButton {
+  background: #46e393;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  width: 150px;
+  height: 45px;
+  font-size: 1.15rem;
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.raisedButton > svg {
+  margin-right: 6px;
+}
+
+/**
+    Spent a lot of my precious time trying to fix an icon colouring bug.
+    Realised that the subset of icons I was using didn't respond to
+    `fill` or `color`. Please, send help.
+**/
+
+.raisedButton:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}

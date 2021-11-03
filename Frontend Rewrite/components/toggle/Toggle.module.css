@@ -1,0 +1,28 @@
+/* TODO: Responsiveness? */
+.mainContainer {
+  width: 270px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 60px 10px 0;
+}
+
+.toggleButton {
+  width: 25px;
+  height: 25px;
+  border: solid 2px #fff;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.active {
+  background-color: var(--psu-green);
+  border-color: var(--psu-green-alt);
+}
+

@@ -1,0 +1,74 @@
+/* .Sidebar {
+  background: #46e393;
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+} */
+
+.Sidebar {
+  background: var(--psu-bg-alt);
+  border-bottom: 1px solid #202020;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px -2px 20px 1px #000;
+}
+
+.iconContainer {
+  width: 250px;
+}
+
+.linksContainer {
+  text-align: center;
+}
+
+.myAccountContainer {
+  width: 250px;
+}
+
+.icon {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #202020;
+}
+
+.icon > img {
+  width: 172px;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.links div {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+/* .Sidebar:hover ~ .SidebarImage {
+  background: url(https://www.nme.com/wp-content/uploads/2020/10/Among-Us-2.jpg);
+} */
