@@ -1,0 +1,13 @@
+export const state = () => ({
+  globalSettings: {
+    advanced: {
+      noWebWorkers: false
+    }
+  }
+})
+
+export const mutations = {
+  CHANGE_SETTING (state, section, option, result) {
+    state.globalSettings[section][option] = result
+  }
+}

@@ -1,0 +1,6 @@
+<svg id="credit-card" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_93" data-name="Rectangle 93" width="24" height="24" fill="#aeaeae" opacity="0"/>
+  <path id="Path_429" data-name="Path 429" d="M19,5H5A3,3,0,0,0,2,8v8a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V8A3,3,0,0,0,19,5ZM4,8A1,1,0,0,1,5,7H19a1,1,0,0,1,1,1V9H4Zm16,8a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V11H20Z" fill="#aeaeae"/>
+  <path id="Path_430" data-name="Path 430" d="M7,15h4a1,1,0,0,0,0-2H7a1,1,0,0,0,0,2Z" fill="#aeaeae"/>
+  <path id="Path_431" data-name="Path 431" d="M15,15h2a1,1,0,0,0,0-2H15a1,1,0,0,0,0,2Z" fill="#aeaeae"/>
+</svg>

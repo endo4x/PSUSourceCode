@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--background);
+
+  color: var(--text-color-primary);
+  font-family: "Segoe UI", sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 0px;
+}
+
+p.error {
+  background-color: #d04040;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button {
+  color: #fff;
+  background: linear-gradient(90deg, var(--theme-gradient-1-primary) 0%, var(--theme-gradient-1-secondary) 100%);
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  outline: none;
+}
+
+button.warning {
+  background: linear-gradient(90deg, var(--red-gradient-1-primary) 0%, var(--red-gradient-1-secondary) 100%);
+}
+
+button:disabled {
+  background: linear-gradient(90deg, #4f4f4f 0%, #9D9D9D 100%);
+}
+
+button:disabled:hover {
+  cursor: not-allowed;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  display: block;
+  background: var(--background-secondary);
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: var(--text-color-primary);
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: 2px solid transparent;
+  left: 10px;
+}
+
+input[type="text"]:read-only {
+  background: #626262;
+}
+
+input:active, input:focus, input:focus-within {
+	border: 2px solid var(--border);
+}
+
+textarea {
+  display: block;
+  background: var(--background-secondary);
+  border: none;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--text-color-primary);
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  border: 2px solid transparent;
+  left: 10px;
+  resize: none;
+  padding: 10px;
+}
+
+textarea:read-only {
+  background: #626262;
+}
+
+textarea:active, textarea:focus, textarea:focus-within {
+	border: 2px solid var(--border);
+}
+
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+a {
+  outline: none;
+}
+
+
+/* Define an animation behavior */
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+
+.fa-spinner {
+  animation: spinner 1s linear infinite;
+}
+
+.fa-spin {
+  animation: spinner 1s linear infinite;
+}
+
+
+.vs__dropdown-menu {
+  background: var(--background) !important;
+  border: 1px solid var(--border) !important;
+  padding: 0px !important;
+  border-radius: 4px !important;
+  transform: translateX(11px) !important;
+}
+
+.vs__dropdown-toggle {
+  border-color: #626262 !important;
+}
+
+.vs__selected {
+  color: #626262 !important;
+}
+
+.vs__search {
+  color: var(--text-color-primary) !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.vs__dropdown-menu li:first-child {
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.vs__dropdown-option--highlight {
+    background: linear-gradient(90deg, var(--theme-gradient-1-primary) 0%, var(--theme-gradient-1-secondary) 100%) !important;
+    color: #fff !important;
+}
+
+.vs__dropdown-option {
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking {
+  background-color: transparent !important;
+}

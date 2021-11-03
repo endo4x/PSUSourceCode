@@ -1,0 +1,20 @@
+* {
+  --background: #171717;
+  --background-secondary: #0D0D0D;
+
+  --border: #2C2C2C;
+  --theme-gradient-1-primary: #105b3d;
+  --theme-gradient-1-secondary: #00C173;
+
+  --theme-gradient-2-primary: #17CB83;
+  --theme-gradient-2-secondary: #118478;
+
+  --theme-black-gradient-primary: #0D0D0D;
+  --theme-black-gradient-secondary: #1C1B1B;
+
+  --text-color-primary: #D1D1D1;
+  --text-color-secondary: #7B7B7B;
+
+  --red-gradient-1-primary: #5b1010;
+  --red-gradient-1-secondary: #C10000;
+}

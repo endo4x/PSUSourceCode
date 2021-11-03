@@ -1,0 +1,50 @@
+{
+  "name": "psu-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "standard --fix && node ./tests/core.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@nuxtjs/recaptcha": "^0.6.2",
+    "chart.js": "^2.9.4",
+    "core-js": "^3.8.3",
+    "localforage": "^1.9.0",
+    "lua-fmt": "^2.6.0",
+    "nanoid": "^3.1.20",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.14.12",
+    "postgres-date": "^2.0.0",
+    "simple-syntax-highlighter": "^1.4.4",
+    "vue-chartist": "^2.3.1",
+    "vue-chartjs": "^3.5.1",
+    "vue-select": "^3.11.2",
+    "vue-tippy": "^4.7.2",
+    "vue2-ace-editor": "^0.0.15",
+    "vue2-perfect-scrollbar": "^1.5.0",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.1.2",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "standard": "^16.0.3",
+    "vue-svg-loader": "^0.16.0",
+    "worker-loader": "^3.0.7"
+  }
+}

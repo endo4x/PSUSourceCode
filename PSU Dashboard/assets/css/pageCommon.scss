@@ -1,0 +1,136 @@
+/*
+ PageCommon CSS, A Common dashboard UI Lib for PSU
+*/
+
+.commonPage {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+
+  > h1 {
+    font-size: 25px;
+  }
+
+  .card {
+    position: relative;
+    border: 2px #2C2C2C solid;
+    border-radius: 15px;
+    background: linear-gradient(141deg, var(--theme-black-gradient-primary) 32%, var(--theme-black-gradient-secondary) 100%);
+
+    h1 {
+      position: absolute;
+      top: 50px;
+      left: 155px;
+      font-size: 21px;
+      font-weight: 400;
+    }
+
+    .cardDropdown {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 30px;
+      height: 30px;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    .cardDropdown:hover {
+      cursor: pointer;
+    }
+
+    .cardIcon {
+      position: absolute;
+
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(180deg, var(--theme-gradient-1-primary) 0%, var(--theme-gradient-1-secondary) 100%);
+      border-radius: 50%;
+
+      top: 50%;
+      left: 40px;
+      transform: translateY(-50%);
+      box-shadow:
+      0 0 0 7px #17CB83,
+      0 0 0 14px #108254,
+      0 0 0 21px #0a5235;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}
+
+
+// Tweak these to change the style of the toggle
+$toggle-background-color-on: linear-gradient(90deg, var(--theme-gradient-1-primary) 0%, var(--theme-gradient-1-secondary) 100%);
+$toggle-background-color-off: linear-gradient(90deg, #4f4f4f 0%, #9D9D9D 100%);
+$toggle-control-color: white;
+$toggle-width: 50px;
+$toggle-height: 25px;
+$toggle-gutter: 5px;
+$toggle-radius: 50%;
+$toggle-control-speed: .15s;
+$toggle-control-ease: ease-in;
+
+// These are our computed variables
+// change at your own risk.
+$toggle-radius: $toggle-height / 2;
+$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: $toggle-width;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  input:checked ~ .control {
+    background:  linear-gradient(90deg, var(--theme-gradient-1-primary) 0%, var(--theme-gradient-1-secondary) 100%) !important;
+
+    &:after {
+      left: $toggle-width - $toggle-control-size - $toggle-gutter;
+    }
+  }
+
+  .control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $toggle-height;
+    width: $toggle-width;
+    border-radius: $toggle-radius;
+    background: $toggle-background-color-off;
+    transition: background $toggle-control-speed $toggle-control-ease;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: $toggle-gutter;
+      top: $toggle-gutter;
+      width: $toggle-control-size;
+      height: $toggle-control-size;
+      border-radius: $toggle-radius;
+      background: $toggle-control-color;
+      transition: left $toggle-control-speed $toggle-control-ease;
+    }
+  }
+}
