@@ -18,7 +18,7 @@ Do not nag me about errors in the code, I did not leak this nor do I have any kn
 
 **Who leaked this?**
 
-doxyouhook and bluerose hacker leaked this. I do not know anything about them, if you are part of that group and want me to change anything or want me to keep your name out of this, then dm me with the discord in my profile, thanks.
+doxyouhook and bluerose hacker leaked this. I do not know anything about them, if you are part of that group and want me to change anything, want credit or want me to remove your name, then dm me with the discord in my profile, thanks.
 
 **May I re-use this?**
 
